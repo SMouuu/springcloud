@@ -1,7 +1,7 @@
-package org.example.advice;
+package com.imooc.ecommerce.advice;
 
 import lombok.extern.slf4j.Slf4j;
-import org.example.vo.CommonResponse;
+import com.imooc.ecommerce.vo.CommonResponse;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 

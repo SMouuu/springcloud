@@ -1,4 +1,4 @@
-package org.example.annotation;
+package com.imooc.ecommerce.annotation;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

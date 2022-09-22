@@ -1,8 +1,8 @@
-package org.example.advice;
+package com.imooc.ecommerce.advice;
 
 
-import org.example.annotation.IgnoreResponseAdvice;
-import org.example.vo.CommonResponse;
+import com.imooc.ecommerce.annotation.IgnoreResponseAdvice;
+import com.imooc.ecommerce.vo.CommonResponse;
 import org.springframework.core.MethodParameter;
 import org.springframework.http.MediaType;
 import org.springframework.http.converter.HttpMessageConverter;

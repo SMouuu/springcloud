@@ -1,4 +1,4 @@
-package org.example.vo;
+package com.imooc.ecommerce.vo;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
