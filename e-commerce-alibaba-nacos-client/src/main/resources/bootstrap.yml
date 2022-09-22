@@ -11,7 +11,7 @@ spring:
       # 服务注册发现
       discovery:
         enabled: true # 如果不想使用 Nacos 进行服务注册和发现, 设置为 false 即可
-        server-addr: 192.168.1.196:8848
+        server-addr: 192.168.199.130:8848
         # server-addr: 127.0.0.1:8848,127.0.0.1:8849,127.0.0.1:8850 # Nacos 服务器地址
         namespace: 0b1592b2-b9ca-4a2a-9448-3ee6ea721f7d
       # 配置管理
@@ -21,7 +21,7 @@ spring:
         enabled: true     # 如果不想使用 Nacos 进行配置管理, 设置为 false 即可
         group: DEFAULT_GROUP  # 组, 默认为 DEFAULT_GROUP
         namespace: 0b1592b2-b9ca-4a2a-9448-3ee6ea721f7d
-        server-addr: 192.168.1.196:8848
+        server-addr: 192.168.199.130:8848
 
 
 # 暴露端点
