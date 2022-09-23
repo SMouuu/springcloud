@@ -42,7 +42,8 @@ public class JWTServiceImpl implements IJWTService {
 
     @Override
     public String generateToken(String username, String password) throws Exception {
-        return null;
+
+        return generateToken(username,password,0);
     }
 
     @Override
@@ -83,7 +84,22 @@ public class JWTServiceImpl implements IJWTService {
 
     @Override
     public String registerUserAndGenerateToken(UsernameAndPassword usernameAndPassword) throws Exception {
-        return null;
+        //先校验用户名是否存在，如果存在，不重复注册
+        EcommerceUser oldUser=ecommerceUserDao.findByUsername(usernameAndPassword.getUsername());
+        if(null!=oldUser){
+            log.error("username is registered: [{}]",oldUser.getUsername());
+            return null;
+        }
+        EcommerceUser ecommerceUser = new EcommerceUser();
+        ecommerceUser.setUsername(usernameAndPassword.getUsername());
+        ecommerceUser.setPassword(usernameAndPassword.getPassword());//MD5编码后的
+        ecommerceUser.setExtraInfo("{}");
+        //注册一个新用户，写一条新纪录
+        ecommerceUser = ecommerceUserDao.save(ecommerceUser);
+        log.info("register user suceess: [{}],[{}]",ecommerceUser.getUsername(),ecommerceUser.getPassword());
+
+        //生成token 返回
+        return generateToken(ecommerceUser.getUsername(), ecommerceUser.getPassword());
     }
 
 
