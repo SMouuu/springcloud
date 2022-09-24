@@ -1,13 +1,5 @@
-### 查询服务实例信息
-GET http://localhost:8000/ecommerce-nacos-client/nacos-client/service-instance
-Accept: application/json
-
-### 动态从 Nacos Server 中获取配置信息
-GET http://127.0.0.1:8000/ecommerce-nacos-client/nacos-client/project-config
-Accept: application/json
-
-### 查看 Sleuth 跟踪信息
-GET http://127.0.0.1:9001/imooc/ecommerce-nacos-client/sleuth/trace-info
+### 查询服务
+GET http://127.0.0.1:9001/imooc/ecommerce-nacos-client/nacos-client/service-instance?serviceId=e-commerce-gateway
 Accept: application/json
 e-commerce-user: eyJhbGciOiJSUzI1NiJ9.eyJlLWNvbW1lcmNlLXVzZXIiOiJ7XCJpZFwiOjEwLFwidXNlcm5hbWVcIjpcIkltb29jUWlueWlAaW1vb2MuY29tXCJ9IiwianRpIjoiMGZlMjIxNzItYzllYS00ZmVhLWEzMTMtMTdiZmVlM2RlZGIwIiwiZXhwIjoxNjY0MDM1MjAwfQ.PttlRgWfilq8w8H7tHAyyUPi-6iaSSdmaorSV2KGtTEs9FaBzBalEcjSar3US2Be9RQ5euzDD82CKzalQtdWNA8_fJnnMzfuEmCOriWFw1u80EfOv9Rr6uV0kPTPa4PnwsjjceaoNVOWlF_hQO_FH7zwfC4VBZn49ZIBxNhHhGpp6fj4CCgiJdxVGXLcyhKfsylRbr2stBexHu3E5pQquYVbBeUSy0Du2g_wgd4IUIKMe56dOQPXJAvcLUrzgXjGgbFzZABXbrPudsxrb1WVHkb5Lf3EJcQXoiPx76e341LKQ8VCUMQB3pjm3l3BJdZmiiA7K8nLqwiuLxujQEGPWw
 token: imooc
