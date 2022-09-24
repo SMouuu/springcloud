@@ -1,14 +1,15 @@
 package com.imooc.ecommerce.constant;
 
 /**
- * 网关常量定义
- */
+ * <h1>网关常量定义</h1>
+ * */
 public class GatewayConstant {
-    //登录Uri
-    public static final String LOGIN_URI = "/e-comerce/login";
 
-    //注册uri
-    public static final String REGISTER_URI = "/e-comerce/register";
+    /** 登录 uri */
+    public static final String LOGIN_URI = "/e-commerce/login";
+
+    /** 注册 uri */
+    public static final String REGISTER_URI = "/e-commerce/register";
 
     /** 去授权中心拿到登录 token 的 uri 格式化接口 */
     public static final String AUTHORITY_CENTER_TOKEN_URL_FORMAT =

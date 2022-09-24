@@ -13,6 +13,6 @@ POST http://127.0.0.1:7000/ecommerce-authority-center/authority/register
 Content-Type: application/json
 
 {
-  "username": "ImoocQinyi123@imooc.com",
+  "username": "ImoocQinyi1234@imooc.com",
   "password": "202cb962ac59075b964b07152d234b70"
 }

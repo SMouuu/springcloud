@@ -8,6 +8,7 @@ import com.imooc.ecommerce.vo.JwtToken;
 import com.imooc.ecommerce.vo.LoginUserInfo;
 import com.imooc.ecommerce.vo.UsernameAndPassword;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.loadbalancer.LoadBalancerClient;
 import org.springframework.cloud.gateway.filter.GatewayFilterChain;

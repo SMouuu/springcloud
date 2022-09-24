@@ -1,12 +1,11 @@
 package com.imooc.ecommerce.config;
 
-
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;
 
 /**
- * 配置类，读取nacos相关的配置项，用于配置监听器
- */
+ * <h1>配置类, 读取 Nacos 相关的配置项, 用于配置监听器</h1>
+ * */
 @Configuration
 public class GatewayConfig {
 
