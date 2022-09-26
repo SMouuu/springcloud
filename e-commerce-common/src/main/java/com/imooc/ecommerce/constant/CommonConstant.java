@@ -3,7 +3,7 @@ package com.imooc.ecommerce.constant;
 /**
  * 通用模块常量定义
  */
-public class CommonConstant {
+public final class CommonConstant {
 
     /**
      * RSA公钥
@@ -17,7 +17,7 @@ public class CommonConstant {
     /**
      * JWT 中存储用户信息的key
      */
-    public static final String JWT_USER_INFO_KEY="e-commerce-user";
+    public static final String JWT_USER_INFO_KEY = "e-commerce-user";
 
     /**
      * 授权中心的service id
