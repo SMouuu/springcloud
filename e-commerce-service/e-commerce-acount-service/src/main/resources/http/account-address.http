@@ -1,0 +1,43 @@
+### 创建用户地址信息
+POST http://127.0.0.1:9001/imooc/ecommerce-account-service/address/create-address
+Content-Type: application/json
+e-commerce-user: eyJhbGciOiJSUzI1NiJ9.eyJlLWNvbW1lcmNlLXVzZXIiOiJ7XCJpZFwiOjEwLFwidXNlcm5hbWVcIjpcIkltb29jUWlueWlAaW1vb2MuY29tXCJ9IiwianRpIjoiYmNiN2Q3YmQtN2UyNC00Njg5LWE4NDktMDkwZTM5OWM2ZTI2IiwiZXhwIjoxNjY0Mjk0NDAwfQ.L-J8VUZ30WlC_1dNkY0WsmDH10ci9c_Fvmn53506Nd0p4zowR8-jNeGHONgxxhudLQTmNvUyTXnnwt90bh83FaU8kGh3YVcx2xENUdHNfS7PyWhds5Yr-r5V53GOr_wIeHpKe2KeybSws2jPnkRovSiblrT6zfmQTvYXtld6y4j9B8M-Cu3vlADP5ADDQRa8vGfs9a-qEryCAkIm39im9g5BL8jFI7yluMvB7iEub1djax_UtUkzP3QTiKMOKC-OsFS1_pEHFEiw8MGiBr5u_-Dl6TRJP6hJ8nVVfGwmHHbsgRG7oHfuQIm1CHneGue82eHt_9n76IlKKmtdYoXHMg
+
+{
+  "userId": 10,
+  "addressItems": [
+    {
+      "username": "shen2",
+      "phone": "16600000001",
+      "province": "上海市",
+      "city": "上海市",
+      "addressDetail": "奉贤区"
+    }
+  ]
+}
+
+### 当前登录用户地址信息
+GET http://127.0.0.1:9001/imooc/ecommerce-account-service/address/current-address
+Accept: application/json
+e-commerce-user: eyJhbGciOiJSUzI1NiJ9.eyJlLWNvbW1lcmNlLXVzZXIiOiJ7XCJpZFwiOjEwLFwidXNlcm5hbWVcIjpcIkltb29jUWlueWlAaW1vb2MuY29tXCJ9IiwianRpIjoiYmNiN2Q3YmQtN2UyNC00Njg5LWE4NDktMDkwZTM5OWM2ZTI2IiwiZXhwIjoxNjY0Mjk0NDAwfQ.L-J8VUZ30WlC_1dNkY0WsmDH10ci9c_Fvmn53506Nd0p4zowR8-jNeGHONgxxhudLQTmNvUyTXnnwt90bh83FaU8kGh3YVcx2xENUdHNfS7PyWhds5Yr-r5V53GOr_wIeHpKe2KeybSws2jPnkRovSiblrT6zfmQTvYXtld6y4j9B8M-Cu3vlADP5ADDQRa8vGfs9a-qEryCAkIm39im9g5BL8jFI7yluMvB7iEub1djax_UtUkzP3QTiKMOKC-OsFS1_pEHFEiw8MGiBr5u_-Dl6TRJP6hJ8nVVfGwmHHbsgRG7oHfuQIm1CHneGue82eHt_9n76IlKKmtdYoXHMg
+
+### 通过 id 获取用户地址信息
+GET http://127.0.0.1:9001/imooc/ecommerce-account-service/address/address-info?id=2
+Accept: application/json
+e-commerce-user: eyJhbGciOiJSUzI1NiJ9.eyJlLWNvbW1lcmNlLXVzZXIiOiJ7XCJpZFwiOjEwLFwidXNlcm5hbWVcIjpcIkltb29jUWlueWlAaW1vb2MuY29tXCJ9IiwianRpIjoiYmNiN2Q3YmQtN2UyNC00Njg5LWE4NDktMDkwZTM5OWM2ZTI2IiwiZXhwIjoxNjY0Mjk0NDAwfQ.L-J8VUZ30WlC_1dNkY0WsmDH10ci9c_Fvmn53506Nd0p4zowR8-jNeGHONgxxhudLQTmNvUyTXnnwt90bh83FaU8kGh3YVcx2xENUdHNfS7PyWhds5Yr-r5V53GOr_wIeHpKe2KeybSws2jPnkRovSiblrT6zfmQTvYXtld6y4j9B8M-Cu3vlADP5ADDQRa8vGfs9a-qEryCAkIm39im9g5BL8jFI7yluMvB7iEub1djax_UtUkzP3QTiKMOKC-OsFS1_pEHFEiw8MGiBr5u_-Dl6TRJP6hJ8nVVfGwmHHbsgRG7oHfuQIm1CHneGue82eHt_9n76IlKKmtdYoXHMg
+
+### 获取用户地址信息
+POST http://127.0.0.1:9001/imooc/ecommerce-account-service/address/address-info-by-table-id
+Content-Type: application/json
+e-commerce-user: eyJhbGciOiJSUzI1NiJ9.eyJlLWNvbW1lcmNlLXVzZXIiOiJ7XCJpZFwiOjEwLFwidXNlcm5hbWVcIjpcIkltb29jUWlueWlAaW1vb2MuY29tXCJ9IiwianRpIjoiYmNiN2Q3YmQtN2UyNC00Njg5LWE4NDktMDkwZTM5OWM2ZTI2IiwiZXhwIjoxNjY0Mjk0NDAwfQ.L-J8VUZ30WlC_1dNkY0WsmDH10ci9c_Fvmn53506Nd0p4zowR8-jNeGHONgxxhudLQTmNvUyTXnnwt90bh83FaU8kGh3YVcx2xENUdHNfS7PyWhds5Yr-r5V53GOr_wIeHpKe2KeybSws2jPnkRovSiblrT6zfmQTvYXtld6y4j9B8M-Cu3vlADP5ADDQRa8vGfs9a-qEryCAkIm39im9g5BL8jFI7yluMvB7iEub1djax_UtUkzP3QTiKMOKC-OsFS1_pEHFEiw8MGiBr5u_-Dl6TRJP6hJ8nVVfGwmHHbsgRG7oHfuQIm1CHneGue82eHt_9n76IlKKmtdYoXHMg
+
+{
+  "ids": [
+    {
+      "id": 2
+    },
+    {
+      "id": 3
+    }
+  ]
+}
